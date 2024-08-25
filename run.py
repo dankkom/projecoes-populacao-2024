@@ -57,6 +57,8 @@ def plot_pop_pyramid(data, date):
         x=0.025,
         y=0.975,
     )
+    total_pop = data.loc[data["ANO"] == date, "POPULAÇÃO"].sum()
+    ax.set_title(f"População total: {int(total_pop):,}".replace(",", "."), fontsize=22)
     ax.xaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(formatter_x))
     ax.set_yticks(np.arange(2.5, 95, 5))
     ax.yaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(formatter_y))
