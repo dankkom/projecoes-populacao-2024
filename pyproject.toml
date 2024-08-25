@@ -1,7 +1,7 @@
 [project]
 name = "projecoes-populacao-2024"
 version = "0.1.0"
-description = "Add your description here"
+description = "Projecoes de populacao para o Brasil"
 authors = [
     { name = "Daniel Komesu", email = "danielkomesu@gmail.com" }
 ]
@@ -26,6 +26,3 @@ dev-dependencies = []
 
 [tool.hatch.metadata]
 allow-direct-references = true
-
-[tool.hatch.build.targets.wheel]
-packages = ["src/projecoes_populacao_2024"]
